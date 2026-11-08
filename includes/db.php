@@ -1,8 +1,8 @@
 <?php
 
 $host = "localhost";
-$user = "root";
-$password = "";
+$user = "recruteur";
+$password = "recruteur123";
 $database = "recruteur_ai";
 
 $conn = new mysqli(
