@@ -25,9 +25,7 @@ if (!isset($_SESSION["user_id"])) {
 
 <body class="bg-black text-white min-h-screen">
 
-<div class="absolute inset-0 bg-gradient-to-br from-cyan-900 via-black to-purple-900"></div>
-
-<div class="relative z-10">
+<div class="fixed inset-0 bg-gradient-to-br from-cyan-900 via-black to-purple-900 -z-10"></div>
 
 <nav class="flex justify-between items-center p-6">
 
@@ -36,8 +34,8 @@ if (!isset($_SESSION["user_id"])) {
 </h1>
 
 <a
-    href="logout.php"
-    class="bg-red-500 px-5 py-2 rounded-lg hover:bg-red-400 transition"
+href="logout.php"
+class="bg-red-500 px-5 py-2 rounded-lg hover:bg-red-400 transition"
 >
 Déconnexion
 </a>
@@ -57,12 +55,14 @@ Bienvenue
 </h2>
 
 <p class="text-gray-300 text-lg">
-Prépare-toi aux entretiens techniques et améliore ton niveau de développeur.
+Choisis une catégorie et commence ton entraînement technique.
 </p>
 
 </div>
 
 <div class="grid md:grid-cols-3 gap-8">
+
+<!-- HTML -->
 
 <div class="bg-gray-900 rounded-2xl p-8 hover:scale-105 transition">
 
@@ -74,18 +74,21 @@ Prépare-toi aux entretiens techniques et améliore ton niveau de développeur.
 HTML / CSS
 </h3>
 
-<p class="text-gray-400">
-Questions sur HTML5, CSS3,
+<p class="text-gray-400 mb-6">
+Questions HTML5, CSS3,
 Flexbox et Responsive Design.
 </p>
 
-<button
-class="mt-6 bg-cyan-500 px-5 py-2 rounded-lg hover:bg-cyan-400"
+<a
+href="play_quiz.php?category=HTML"
+class="inline-block bg-cyan-500 px-5 py-3 rounded-lg hover:bg-cyan-400"
 >
 Commencer
-</button>
+</a>
 
 </div>
+
+<!-- JAVASCRIPT -->
 
 <div class="bg-gray-900 rounded-2xl p-8 hover:scale-105 transition">
 
@@ -97,18 +100,21 @@ Commencer
 JavaScript
 </h3>
 
-<p class="text-gray-400">
-Variables, DOM,
-fonctions et ES6.
+<p class="text-gray-400 mb-6">
+Variables, fonctions,
+DOM et ES6.
 </p>
 
-<button
-class="mt-6 bg-yellow-500 px-5 py-2 rounded-lg hover:bg-yellow-400"
+<a
+href="play_quiz.php?category=JavaScript"
+class="inline-block bg-yellow-500 px-5 py-3 rounded-lg hover:bg-yellow-400"
 >
 Commencer
-</button>
+</a>
 
 </div>
+
+<!-- PHP -->
 
 <div class="bg-gray-900 rounded-2xl p-8 hover:scale-105 transition">
 
@@ -120,16 +126,17 @@ Commencer
 PHP / SQL
 </h3>
 
-<p class="text-gray-400">
-Backend, requêtes SQL,
+<p class="text-gray-400 mb-6">
+Backend, bases de données,
 sessions et sécurité.
 </p>
 
-<button
-class="mt-6 bg-purple-500 px-5 py-2 rounded-lg hover:bg-purple-400"
+<a
+href="play_quiz.php?category=PHP"
+class="inline-block bg-purple-500 px-5 py-3 rounded-lg hover:bg-purple-400"
 >
 Commencer
-</button>
+</a>
 
 </div>
 
@@ -143,13 +150,11 @@ Commencer
 
 <p class="text-gray-400">
 Score actuel : 0 point
-
-<br><br>
-
-Les statistiques et classements arriveront dans une prochaine version.
 </p>
 
-</div>
+<p class="text-gray-500 mt-4">
+Le classement et les statistiques arriveront dans une prochaine version.
+</p>
 
 </div>
 
