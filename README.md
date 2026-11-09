@@ -1,24 +1,26 @@
-RecruteurAI
+🤖 RecruteurAI
+Plateforme de quiz techniques pour développeurs.
 
-Plateforme d'entraînement aux entretiens techniques.
-
-Technologies
-
-HTML5
-
-CSS3
-JavaScript
-PHP 8
-MySQL
 
 Fonctionnalités
 
-Inscription
-Connexion
-Quiz techniques
-Système de score
+Inscription / Connexion
+
+Quiz HTML
+Quiz CSS
+Quiz JavaScript
+Quiz PHP
+Quiz SQL
+Quiz Git
+
+Historique des scores
+
 Classement
+Badges Junior / Confirmé / Expert
 
-Objectif
-
-Permettre aux développeurs de s'entraîner avant un entretien technique.
+Technologies
+PHP
+MySQL
+Tailwind CSS
+Git
+GitHub
